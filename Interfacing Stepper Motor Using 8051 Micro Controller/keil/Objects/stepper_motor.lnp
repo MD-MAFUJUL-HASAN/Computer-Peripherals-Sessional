@@ -1,0 +1,3 @@
+".\Objects\stepper_motor.obj" 
+TO ".\Objects\stepper_motor" 
+PRINT(".\Listings\stepper_motor.m51") CODE( 0X0000-0X0FFF )

@@ -1,0 +1,6 @@
+4511
+7SEG-COM-CAT-GRN
+Logicstate
+Res
+ground
+DC = 5v

@@ -1,0 +1,47 @@
+A51 MACRO ASSEMBLER  ARITHMETIC                                                           08/10/2022 11:50:25 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\arithmetic.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE arithmetic.asm SET(SMALL) DEBUG PRINT(.\Listings\arithmetic.lst) OBJECT
+                      (.\Objects\arithmetic.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 7425              1     mov a,#25h               
+0002 75F012            2     mov b,#12h               
+0005 25F0              3     add a,b                  
+0007 F540              4     mov 40h,a                
+0009 7425              5     mov a,#25h
+000B 95F0              6     subb a,b                 
+000D F541              7     mov 41h,a                
+000F 7425              8     mov a,#25h
+0011 A4                9     mul ab
+0012 F542             10     mov 42h,a                
+0014 85F043           11     mov 43h,b                
+0017 7425             12     mov a,#25h              
+0019 75F012           13     mov b,#12h              
+001C 84               14     div ab
+001D F544             15     mov 44h,a                
+001F 85F045           16     mov 45h,b                
+0022 7425             17     mov a,#25h
+0024 04               18     inc a
+0025 F546             19     mov 46h,a                
+0027 14               20     dec a
+0028 F547             21     mov 47h,a                
+                      22     end
+A51 MACRO ASSEMBLER  ARITHMETIC                                                           08/10/2022 11:50:25 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

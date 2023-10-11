@@ -1,0 +1,9 @@
+AT89C51
+button
+crystal
+res
+motor-dc
+L293D
+power
+ground
+dc = 12V

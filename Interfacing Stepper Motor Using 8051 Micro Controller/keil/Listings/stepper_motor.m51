@@ -1,0 +1,97 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    08/10/2022  15:39:04  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\stepper_motor.obj TO .\Objects\stepper_motor PRINT (.\Listings\stepper_motor.m51) 
+>> CODE (0X0000-0X0FFF)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\stepper_motor.obj (STEPPER_MOTOR)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\stepper_motor (STEPPER_MOTOR)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0020H     UNIT         ?PR?_MS_DELAY?STEPPER_MOTOR
+            CODE    0820H     001EH     UNIT         ?PR?MAIN?STEPPER_MOTOR
+            CODE    083EH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\stepper_motor (STEPPER_MOTOR)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?STEPPER_MOTOR
+
+?PR?MAIN?STEPPER_MOTOR
+  +--> ?PR?_MS_DELAY?STEPPER_MOTOR
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\stepper_motor (STEPPER_MOTOR)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        STEPPER_MOTOR
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  C:0820H         PUBLIC        main
+  C:0800H         PUBLIC        _ms_delay
+  -------         PROC          _MS_DELAY
+  D:0006H         SYMBOL        t
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  08/10/2022  15:39:04  PAGE 2
+
+
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0002H         SYMBOL        j
+  -------         ENDDO         
+  C:0800H         LINE#         34
+  C:0800H         LINE#         35
+  C:0800H         LINE#         37
+  C:080AH         LINE#         38
+  C:081FH         LINE#         39
+  -------         ENDPROC       _MS_DELAY
+  -------         PROC          MAIN
+  C:0820H         LINE#         40
+  C:0820H         LINE#         41
+  C:0820H         LINE#         42
+  C:0820H         LINE#         43
+  C:0820H         LINE#         44
+  C:0823H         LINE#         45
+  C:082AH         LINE#         46
+  C:082DH         LINE#         47
+  C:0830H         LINE#         48
+  C:0833H         LINE#         49
+  C:0836H         LINE#         50
+  C:0839H         LINE#         51
+  C:083CH         LINE#         52
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        STEPPER_MOTOR
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 003EH BYTE ( 3%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=77
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
